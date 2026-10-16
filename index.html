@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanusheya | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* ✅ SOFT PROFESSIONAL BACKGROUND */
+    body {
+      background: linear-gradient(135deg, #f7f3ff, #ece9ff, #faf7ff);
+      background-attachment: fixed;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #5a00e6, #7a28e0, #9b2de2);
+      color: #fff;
+      text-align: center;
+      padding: 90px 20px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 3.3em;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #1d1b31;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 5px 0;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 22px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #b175ff;
+      transform: scale(1.08);
+    }
+
+    section {
+      padding: 60px 8%;
+    }
+
+    .container {
+      background: #ffffffcc;
+      backdrop-filter: blur(4px);
+      border-radius: 20px;
+      padding: 45px;
+      margin-bottom: 50px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+
+    h2 {
+      color: #7a28e0;
+      margin-bottom: 25px;
+      border-left: 6px solid #7a28e0;
+      padding-left: 12px;
+      font-size: 1.9em;
+      letter-spacing: 1px;
+    }
+
+    /* ABOUT */
+    .about-box {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-box img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #7a28e0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    /* CERTIFICATIONS */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .cert-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 18px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(120, 34, 235, 0.25);
+    }
+
+    .cert-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* SKILLS */
+    .skills li {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 16px;
+      background: #f3e8ff;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    /* PROGRAMMING LANGUAGES */
+    #languages {
+      padding: 40px 0;
+    }
+
+    .lang-section {
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+
+    .lang-row-2 {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .lang-center {
+      display: flex;
+      justify-content: center;
+    }
+
+    .lang-card {
+      background: #fff;
+      width: 220px;
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+      transition: 0.3s;
+    }
+
+    .lang-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(110, 27, 180, 0.32);
+      background: linear-gradient(135deg, #f9efff, #ead6ff);
+    }
+
+    .lang-card img {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    .lang-card p {
+      font-weight: 700;
+      color: #5a189a;
+      font-size: 1.3rem;
+    }
+
+    /* CONTACT */
+    footer {
+      background: #1d1b31;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+    }
+
+    @media(max-width: 768px){
+      .about-box { text-align: center; justify-content: center; }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>DHANUSHEYA</h1>
+    <p>WEB DEVELOPER | PROGRAMMER | DESIGNER</p>
+  </header>
+
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#certifications">CERTIFICATIONS</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#languages">LANGUAGES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about" class="container">
+    <h2>ABOUT ME</h2>
+    <div class="about-box">
+      <img src="c:/Users/A S U S/Desktop/images/WhatsApp Image 2025-11-08 at 12.34.16_f274c33e.jpg">
+      <p>Hello! I'm <strong>DHANUSHEYA</strong>, a passionate software developer skilled in building responsive and modern web applications. I love exploring new technologies and creating beautiful, smooth user experiences.</p>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="container">
+    <h2>Certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <img src="c:/Users/A S U S/Desktop/images/WhatsApp Image 2025-11-08 at 12.44.03_301b14eb.jpg">
+        <h3>HTML5</h3>
+        <p>Completed HTML basics.</p>
+      </div>
+
+      <div class="cert-card">
+        <img src="c:/Users/A S U S/Desktop/images/WhatsApp Image 2025-11-08 at 12.44.04_24a5f55a.jpg">
+        <h3>CSS3</h3>
+        <p>Completed CSS basics.</p>
+      </div>
+
+      <div class="cert-card">
+        <img src="c:/Users/A S U S/Desktop/images/WhatsApp Image 2025-11-08 at 12.44.04_16a5b6fe.jpg">
+        <h3>NPTEL Soft Skill</h3>
+        <p>Enhancing Soft Skills and Personality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="container skills">
+    <h2>SKILLS</h2>
+    <ul>
+      <li>Web Design (HTML, CSS, JavaScript)</li>
+      <li>Data Structures & Algorithms</li>
+      <li>Python Data Analysis</li>
+    </ul>
+  </section>
+
+  <!-- PROGRAMMING LANGUAGES -->
+  <section id="languages" class="container">
+    <h2>PROGRAMMING LANGUAGES</h2>
+
+    <div class="lang-section">
+
+      <!-- Row 1 -->
+      <div class="lang-row-2">
+        <div class="lang-card">
+          <img src="c:/Users/A S U S/Desktop/images/download (1).png">
+          <p>C</p>
+        </div>
+
+        <div class="lang-card">
+          <img src="c:/Users/A S U S/Desktop/images/download.png">
+          <p>Java</p>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="lang-row-2">
+        <div class="lang-card">
+          <img src="c:/Users/A S U S/Desktop/images/download.jpg">
+          <p>Python</p>
+        </div>
+
+        <div class="lang-card">
+          <img src="c:/Users/A S U S/Desktop/images/HTML5_Logo_512.png">
+          <p>HTML</p>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="lang-center">
+        <div class="lang-card">
+          <img src="c:/Users/A S U S/Desktop/images/CSS-Logo-2011.png">
+          <p>CSS</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container contact">
+    <h2>Contact</h2>
+
+    <p><strong>Email:</strong> dhanusheyadhanu755@gmail.com</p>
+    <p><strong>Phone:</strong> +91 9025535755</p>
+
+    <p><strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/dhanusheya-p-611937331" target="_blank">LinkedIn Profile</a>
+    </p>
+
+    <p><strong>GitHub:</strong>
+      <a href="https://github.com/Dhanusheyap755" target="_blank">GitHub</a>
+    </p>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Dhanusheya. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
